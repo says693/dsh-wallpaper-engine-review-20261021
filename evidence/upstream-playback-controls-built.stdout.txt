@@ -1,0 +1,37 @@
+PASS | A1 custom-uploaded video is listed under the default 「Everyone」 filter (#84)
+PASS | A2 an explicitly Mature upload is still filtered out by default
+PASS | A3 applying it mounts the wallpaper layer + <video> (no blank background)
+PASS | A4 the uploaded media URL is used | /wallpaper-engine/media/up1
+PASS | A5 playback actually starts
+PASS | A6 the toggle offers 「暂停」 while it really plays | 暂停
+PASS | B1 pausing stops the element and flips the control to 「播放」 | label=播放
+PASS | B2 「播放」 resumes playback | label=暂停
+PASS | B3 a refused play() is retried (not silently swallowed) | retries after refusal=1 (play() calls 2→3)
+PASS | B3 负对照：同一条判据对「拒绝后一次都没重试」（增量 0）会当场红
+PASS | B4 the element is still paused, so the UI must NOT claim 「播放中」 | label=播放
+PASS | B5 the refusal reason is surfaced to the user
+PASS | B6 the control stays enabled so it can be retried
+PASS | B7 clicking 播放 retries and resumes playback | label=暂停
+PASS | B8 the reason clears once playback recovers
+PASS | B9a an aborted start reports 「已暂停」 with a resumable control
+PASS | B9b it resumes by itself once the media is ready | paused=false
+PASS | C1 an undecodable video reports 「已暂停」, not 「播放中」 | label=播放
+PASS | C2 the reason names the codec problem and suggests H.264
+PASS | C3 recovery clears the error state
+PASS | D1 a wallpaper switch while paused mounts the new video paused (not playing)
+PASS | D2 …and the control still offers a working 「播放」 | 播放
+PASS | D3 that 「播放」 resumes the new wallpaper
+PASS | E1 dropping the active wallpaper via a filter is explained (no silent blank)
+PASS | E2 the layer really is gone (the note replaces an unexplained blank)
+PASS | E3 the filter now offers the explicitly Mature upload
+PASS | E4 an explicitly rated upload plays like any other
+PASS | E5 switching the filter back re-explains the drop (never a silent blank)
+PASS | E6 the user's own upload is selectable again under the default filter
+PASS | E7 …and it plays, with the explanation cleared
+PASS | F1 switching the TYPE filter keeps the applied wallpaper mounted
+PASS | F2 …still playing (the switch must not blank or pause it)
+PASS | F3 …and no note claims the wallpaper was filtered out
+PASS | F4 the filter really applies to the list (the playing card is gone from the grid)
+PASS | F5 switching the filter back restores the card without touching playback
+
+ALL PLAYBACK CONTROL CHECKS PASSED

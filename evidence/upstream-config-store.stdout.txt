@@ -1,0 +1,40 @@
+
+A. 读永不抛：缺失 / 坏 JSON / 非对象（含 JSON 数组）⇒ {}
+  ✓ A1 readConfig 对缺失/坏 JSON/数字/字符串/null/数组 一律回 {}，正常对象原样
+  ✓ A2 负对照：变异体把解析结果原样返回 ⇒ 非对象 JSON 直通 ⇒ A1 判据判红
+  ✓ A3 数组账本上 `writeSettings` 必须真落盘（数组不是账本 ⇒ 读回 `{}` 后正常写）
+  ✓ A4 负对照：变异体删掉"数组不算账本"的裁决（数组直通）⇒ A1 与 A3 都判红
+
+B. 原子发布：内容落盘 + 覆盖 + 不留临时件（含 rename 失败的兜底分支）
+  ✓ B1 atomicWriteFileSync 内容逐字节落盘、可覆盖、不留 `<file>.tmp…` 残骸
+  ✓ B2 atomicWriteFileP 同上（含 Buffer 之外的字符串路径）
+  ✓ B3 兜底分支可达：强制 renameSync 失败 ⇒ 目标仍有完整内容（catch 里退化成直写） — 兜底后同目录残骸 = ["config.json.tmp"]
+  ✓ B4 异步兜底分支：强制 renameP 失败 ⇒ 目标有内容**且**临时件被清掉
+
+C. 临时名：唯一 + 后缀纯数字（与 cache-prune 的孤儿清扫口径对钉）
+  ✓ C1 atomicTmpPath 连续两次唯一、前缀 `<file>.tmp`、含本进程 pid、后缀纯数字
+  ✓ C2 跨模块契约：本进程 pid 的产物被 cache-prune 留住，别的 pid 的同类产物被清掉
+  ✓ C3 负对照：变异体把序号固定 ⇒ 两次调用同名 ⇒ C1 判据判红
+
+D. 读-改-写串行化：并发不丢改动，且队列本身永不 reject
+  ✓ D1 25 路并发（fn 体全同步）⇒ 终值 == 次数
+  ✓ D2 25 路并发（fn 体内有 await，同真实调用点）⇒ 终值 == 次数
+  ✓ D3 队列永不 reject：一次抛错只 reject 它自己的调用方，后续写入照常执行且保序
+  ✓ D4 负对照：变异体不入队（各自独立 promise）⇒ 并发改动互相覆盖 ⇒ D2 判据判红 — 终值 = 1
+  ✓ D5 负对照：朴素队列（不吞拒绝）⇒ 一次失败后后续写入全被拒 ⇒ D3 判据判红
+
+E. settings 段：缺失/非对象 ⇒ null、round-trip、覆盖不是合并、不动其它键
+  ✓ E1 writeSettings 读改写：round-trip / 二次写覆盖（不合并）/ uploadDir 等其它键保持 / 键集只多一个 settings
+  ✓ E2 负对照：变异体把"覆盖"兑成"合并" ⇒ E1 判据判红
+  ✓ E3 导出面恰好 9 个名字（SETTINGS_FIELD 之外的队列/序号等内部状态不外泄） — SETTINGS_FIELD,atomicTmpPath,atomicWriteFileP,atomicWriteFileSync,enqueueConfigWrite,readConfig,readSettings,writeConfig,writeSettings
+
+F. writeConfig：自动建父目录，写盘失败不抛
+  ✓ F1 深层父目录自动创建并落 JSON；父级被文件占位时静默失败不抛
+  ✓ F2 负对照：变异体删掉建父目录 ⇒ 目录缺失时内容没落盘 ⇒ F1 判据判红
+
+G. 覆盖面地板（防"判据在空域上恒真"）
+  ✓ G1 正向判据数 ≥ 12 — passed=21
+  ✓ G2 变异体负对照数 ≥ 7 — mutants=9
+  ✓ G3 本文件直读被测模块（guard-map 的覆盖认定靠这个路径字面量）
+
+ALL CONFIG-STORE CHECKS PASSED (24)

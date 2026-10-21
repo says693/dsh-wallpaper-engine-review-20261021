@@ -1,0 +1,1298 @@
+{
+  "frontendPayload": {
+    "rawBytes": 4542261,
+    "gzipLevel9Bytes": 2541136,
+    "inlinePngs": 10,
+    "inlineBase64Chars": 2369676
+  },
+  "tests": [
+    {
+      "name": "upstream-config-store",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "upstream-api-client-built",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "upstream-picker-model-built",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "upstream-playback-controls-built",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "upstream-client-built",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "upstream-readability-built",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "upstream-theme-follow-built",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "ui-matrix-normal",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "ui-normal-slider",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "ui-normal-save-failure",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "ui-normal-large-preview-r2",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "ui-normal-layout",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "ui-normal-disk-error",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "ui-normal-slider-repeat",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "ui-normal-dark-r2",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "ui-normal-interactions",
+      "exit": 0,
+      "userConfigUnchanged": true
+    },
+    {
+      "name": "ui-normal-restart",
+      "exit": 0,
+      "userConfigUnchanged": true
+    }
+  ],
+  "matrix": [
+    {
+      "case": "tab",
+      "name": "外观",
+      "metrics": {
+        "panel": {
+          "x": 532,
+          "y": 154,
+          "width": 564,
+          "height": 1674
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "主题",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题随壁纸",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "细节",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题预设",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "预设方案",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "玻璃 UI",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "深色单独设置",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "玻璃颜色",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "额外补雾化的选择器",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          }
+        ],
+        "unnamedControls": [
+          {
+            "type": "text",
+            "class": "we-picker__text"
+          }
+        ]
+      },
+      "overflowRows": []
+    },
+    {
+      "case": "tab",
+      "name": "播放",
+      "metrics": {
+        "panel": {
+          "x": 532,
+          "y": 154,
+          "width": 564,
+          "height": 729
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "画面",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "适配",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "水平翻转",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "声音",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "壁纸音轨",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "关闭=静音（保留音量数值）· 开启时音量 0 自动 50%",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          }
+        ],
+        "unnamedControls": []
+      },
+      "overflowRows": []
+    },
+    {
+      "case": "tab",
+      "name": "系统",
+      "metrics": {
+        "panel": {
+          "x": 532,
+          "y": 154,
+          "width": 564,
+          "height": 1350
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "聊天吉祥物",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "显示吉祥物",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "关闭后隐藏吉祥物与壁纸仓库抽屉",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "吉祥物形态",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "浏览方式",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "紧凑布局",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "常规网格 · 分页",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "兼容性",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "Edge 兼容",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "Edge 下视频壁纸走 canvas 渲染",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "适配",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "适配目标",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "unnamedControls": []
+      },
+      "overflowRows": []
+    },
+    {
+      "case": "tab",
+      "name": "扩展",
+      "metrics": {
+        "panel": {
+          "x": 532,
+          "y": 154,
+          "width": 564,
+          "height": 739
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "扩展模块",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "启用自定义会话头像",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "给会话双方配上头像，消息像好友聊天一样左右分列",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "启用点击与拖尾效果",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "启用 3D 效果",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "unnamedControls": []
+      },
+      "overflowRows": []
+    },
+    {
+      "case": "tab",
+      "name": "关于",
+      "metrics": {
+        "panel": {
+          "x": 532,
+          "y": 154,
+          "width": 564,
+          "height": 1341.984375
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "📖 项目简介",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "⭐ 开源与支持",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "💬 加入交流群",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "🙏 贡献者致谢",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          }
+        ],
+        "unnamedControls": []
+      },
+      "overflowRows": []
+    },
+    {
+      "case": "tab-arrow-key",
+      "before": "外观",
+      "after": "外观",
+      "focused": "壁纸库"
+    },
+    {
+      "case": "responsive",
+      "size": {
+        "width": 1024,
+        "height": 768
+      },
+      "metrics": {
+        "panel": {
+          "x": 324,
+          "y": 78,
+          "width": 564,
+          "height": 1674
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "主题",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题随壁纸",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "细节",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题预设",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "预设方案",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "玻璃 UI",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "深色单独设置",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "玻璃颜色",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "额外补雾化的选择器",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          }
+        ],
+        "unnamedControls": [
+          {
+            "type": "text",
+            "class": "we-picker__text"
+          }
+        ]
+      },
+      "overflowRows": []
+    },
+    {
+      "case": "responsive",
+      "size": {
+        "width": 768,
+        "height": 900
+      },
+      "metrics": {
+        "panel": {
+          "x": 236,
+          "y": 104,
+          "width": 484,
+          "height": 1714
+        },
+        "clientWidth": 484,
+        "scrollWidth": 550,
+        "fontSamples": [
+          {
+            "text": "主题",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题随壁纸",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "细节",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题预设",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "预设方案",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "玻璃 UI",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "深色单独设置",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "玻璃颜色",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "额外补雾化的选择器",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          }
+        ],
+        "unnamedControls": [
+          {
+            "type": "text",
+            "class": "we-picker__text"
+          }
+        ]
+      },
+      "overflowRows": [
+        {
+          "text": "思考块液态玻璃对话内容的三挡：关（半透明）/ 液态玻璃 / 原生（正文实色、输入框保持玻璃）关液态玻璃原生",
+          "x": 236,
+          "y": 916,
+          "width": 484,
+          "height": 36,
+          "clientWidth": 484,
+          "scrollWidth": 541
+        },
+        {
+          "text": "左侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 直角右上角 圆角右下角 圆角左下角 直角",
+          "x": 236,
+          "y": 1153,
+          "width": 484,
+          "height": 36,
+          "clientWidth": 484,
+          "scrollWidth": 550
+        },
+        {
+          "text": "右侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 圆角右上角 直角右下角 直角左下角 圆角",
+          "x": 236,
+          "y": 1287,
+          "width": 484,
+          "height": 36,
+          "clientWidth": 484,
+          "scrollWidth": 550
+        }
+      ]
+    },
+    {
+      "case": "responsive",
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "panel": {
+          "x": 236,
+          "y": 78,
+          "width": 106,
+          "height": 2437
+        },
+        "clientWidth": 106,
+        "scrollWidth": 283,
+        "fontSamples": [
+          {
+            "text": "主题",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题随壁纸",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "细节",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题预设",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "预设方案",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "玻璃 UI",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "深色单独设置",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "玻璃颜色",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "额外补雾化的选择器",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          }
+        ],
+        "unnamedControls": [
+          {
+            "type": "text",
+            "class": "we-picker__text"
+          }
+        ]
+      },
+      "overflowRows": [
+        {
+          "text": "边框35%",
+          "x": 236,
+          "y": 366,
+          "width": 106,
+          "height": 22,
+          "clientWidth": 106,
+          "scrollWidth": 245
+        },
+        {
+          "text": "保存当前为预设…导出预设…导入预设…",
+          "x": 236,
+          "y": 621,
+          "width": 106,
+          "height": 106,
+          "clientWidth": 106,
+          "scrollWidth": 127
+        },
+        {
+          "text": "玻璃透明度20%",
+          "x": 236,
+          "y": 974,
+          "width": 106,
+          "height": 22,
+          "clientWidth": 106,
+          "scrollWidth": 245
+        },
+        {
+          "text": "雾化16px",
+          "x": 236,
+          "y": 1006,
+          "width": 106,
+          "height": 22,
+          "clientWidth": 106,
+          "scrollWidth": 245
+        },
+        {
+          "text": "玻璃保真度100%",
+          "x": 236,
+          "y": 1124,
+          "width": 106,
+          "height": 22,
+          "clientWidth": 106,
+          "scrollWidth": 245
+        },
+        {
+          "text": "左侧栏 · 统一圆角四角都按这个值；单独标「直角」的角覆盖它跟随原生小 6px中 12px大 20px",
+          "x": 236,
+          "y": 1409,
+          "width": 106,
+          "height": 74,
+          "clientWidth": 106,
+          "scrollWidth": 190
+        },
+        {
+          "text": "左侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 直角右上角 圆角右下角 圆角左下角 直角",
+          "x": 236,
+          "y": 1493,
+          "width": 106,
+          "height": 74,
+          "clientWidth": 106,
+          "scrollWidth": 283
+        },
+        {
+          "text": "四角全直角四角全圆角",
+          "x": 236,
+          "y": 1577,
+          "width": 106,
+          "height": 32,
+          "clientWidth": 106,
+          "scrollWidth": 187
+        },
+        {
+          "text": "右侧栏 · 统一圆角四角都按这个值；单独标「直角」的角覆盖它跟随原生小 6px中 12px大 20px",
+          "x": 236,
+          "y": 1619,
+          "width": 106,
+          "height": 74,
+          "clientWidth": 106,
+          "scrollWidth": 190
+        },
+        {
+          "text": "右侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 圆角右上角 直角右下角 直角左下角 圆角",
+          "x": 236,
+          "y": 1703,
+          "width": 106,
+          "height": 74,
+          "clientWidth": 106,
+          "scrollWidth": 283
+        },
+        {
+          "text": "四角全直角四角全圆角",
+          "x": 236,
+          "y": 1787,
+          "width": 106,
+          "height": 32,
+          "clientWidth": 106,
+          "scrollWidth": 187
+        }
+      ]
+    },
+    {
+      "case": "invalid-upload",
+      "error": [
+        "仅支持 JPG / PNG 图片与 MP4 视频"
+      ]
+    }
+  ],
+  "slider-normal-result.json": {
+    "before": 1,
+    "after": 0,
+    "afterRemount": {
+      "numericInputs": 1
+    },
+    "errors": []
+  },
+  "save-failure-normal-result.json": {
+    "results": {
+      "mode": "save-failure",
+      "hostBefore": 20,
+      "uiDuring": "25",
+      "failedPuts": 1,
+      "hostDuring": 20,
+      "visibleErrors": [],
+      "unsavedText": false,
+      "uiAfterReload": "20",
+      "successControl": {
+        "ui": "25",
+        "host": 25
+      }
+    },
+    "errors": []
+  },
+  "large-preview-normal-r2-result.json": {
+    "results": {
+      "mode": "large-preview",
+      "image": {
+        "naturalWidth": 8000,
+        "naturalHeight": 5334,
+        "displayWidth": 130.75,
+        "displayHeight": 92
+      },
+      "preview": {
+        "status": 200,
+        "bytes": 180662,
+        "headers": {
+          "content-type": "image/png",
+          "accept-ranges": "bytes",
+          "content-length": "180662",
+          "date": "Wed, 21 Oct 2026 06:42:57 GMT",
+          "connection": "keep-alive",
+          "keep-alive": "timeout=5"
+        }
+      },
+      "originalBytes": 180662
+    },
+    "errors": []
+  },
+  "layout-normal-result.json": {
+    "results": {
+      "mode": "layout",
+      "geometry": [
+        {
+          "text": "本机现状Deepseek_Pro菲比啾比ClaudeDeepSeekGeminiGPTGLMGrokKimiQwen",
+          "width": 564,
+          "height": 30,
+          "clientWidth": 564,
+          "scrollWidth": 564,
+          "children": [
+            {
+              "text": "本机现状",
+              "width": 51.921875,
+              "height": 30
+            },
+            {
+              "text": "Deepseek_Pro",
+              "width": 79.515625,
+              "height": 30
+            },
+            {
+              "text": "菲比啾比",
+              "width": 51.921875,
+              "height": 30
+            },
+            {
+              "text": "Claude",
+              "width": 40.4375,
+              "height": 30
+            },
+            {
+              "text": "DeepSeek",
+              "width": 57.03125,
+              "height": 30
+            },
+            {
+              "text": "Gemini",
+              "width": 40.953125,
+              "height": 30
+            },
+            {
+              "text": "GPT",
+              "width": 40.453125,
+              "height": 30
+            },
+            {
+              "text": "GLM",
+              "width": 40.4375,
+              "height": 30
+            },
+            {
+              "text": "Grok",
+              "width": 40.453125,
+              "height": 30
+            },
+            {
+              "text": "Kimi",
+              "width": 40.4375,
+              "height": 30
+            },
+            {
+              "text": "Qwen",
+              "width": 40.4375,
+              "height": 30
+            }
+          ]
+        },
+        {
+          "text": "关液态玻璃原生",
+          "width": 124.78125,
+          "height": 30,
+          "clientWidth": 125,
+          "scrollWidth": 125,
+          "children": [
+            {
+              "text": "关",
+              "width": 32.421875,
+              "height": 30
+            },
+            {
+              "text": "液态玻璃",
+              "width": 51.921875,
+              "height": 30
+            },
+            {
+              "text": "原生",
+              "width": 32.4375,
+              "height": 30
+            }
+          ]
+        },
+        {
+          "text": "跟随原生小 6px中 12px大 20px",
+          "width": 312,
+          "height": 30,
+          "clientWidth": 312,
+          "scrollWidth": 312,
+          "children": [
+            {
+              "text": "跟随原生",
+              "width": 75,
+              "height": 30
+            },
+            {
+              "text": "小 6px",
+              "width": 75,
+              "height": 30
+            },
+            {
+              "text": "中 12px",
+              "width": 75,
+              "height": 30
+            },
+            {
+              "text": "大 20px",
+              "width": 75,
+              "height": 30
+            }
+          ]
+        },
+        {
+          "text": "左上角 直角右上角 圆角右下角 圆角左下角 直角",
+          "width": 297,
+          "height": 30,
+          "clientWidth": 297,
+          "scrollWidth": 297,
+          "children": [
+            {
+              "text": "左上角 直角",
+              "width": 71.25,
+              "height": 30
+            },
+            {
+              "text": "右上角 圆角",
+              "width": 71.25,
+              "height": 30
+            },
+            {
+              "text": "右下角 圆角",
+              "width": 71.25,
+              "height": 30
+            },
+            {
+              "text": "左下角 直角",
+              "width": 71.25,
+              "height": 30
+            }
+          ]
+        },
+        {
+          "text": "四角全直角四角全圆角",
+          "width": 564,
+          "height": 30,
+          "clientWidth": 564,
+          "scrollWidth": 564,
+          "children": [
+            {
+              "text": "四角全直角",
+              "width": 91.609375,
+              "height": 30
+            },
+            {
+              "text": "四角全圆角",
+              "width": 91.609375,
+              "height": 30
+            }
+          ]
+        },
+        {
+          "text": "跟随原生小 6px中 12px大 20px",
+          "width": 312,
+          "height": 30,
+          "clientWidth": 312,
+          "scrollWidth": 312,
+          "children": [
+            {
+              "text": "跟随原生",
+              "width": 75,
+              "height": 30
+            },
+            {
+              "text": "小 6px",
+              "width": 75,
+              "height": 30
+            },
+            {
+              "text": "中 12px",
+              "width": 75,
+              "height": 30
+            },
+            {
+              "text": "大 20px",
+              "width": 75,
+              "height": 30
+            }
+          ]
+        },
+        {
+          "text": "左上角 圆角右上角 直角右下角 直角左下角 圆角",
+          "width": 297,
+          "height": 30,
+          "clientWidth": 297,
+          "scrollWidth": 297,
+          "children": [
+            {
+              "text": "左上角 圆角",
+              "width": 71.25,
+              "height": 30
+            },
+            {
+              "text": "右上角 直角",
+              "width": 71.25,
+              "height": 30
+            },
+            {
+              "text": "右下角 直角",
+              "width": 71.25,
+              "height": 30
+            },
+            {
+              "text": "左下角 圆角",
+              "width": 71.25,
+              "height": 30
+            }
+          ]
+        },
+        {
+          "text": "四角全直角四角全圆角",
+          "width": 564,
+          "height": 30,
+          "clientWidth": 564,
+          "scrollWidth": 564,
+          "children": [
+            {
+              "text": "四角全直角",
+              "width": 91.609375,
+              "height": 30
+            },
+            {
+              "text": "四角全圆角",
+              "width": 91.609375,
+              "height": 30
+            }
+          ]
+        }
+      ]
+    },
+    "errors": []
+  },
+  "disk-error-normal-result.json": {
+    "before": 20,
+    "response": {
+      "status": 200,
+      "body": {
+        "ok": true,
+        "settings": {
+          "id": "up-mvhqtx7p-ly8fxn",
+          "scrim": 0.25,
+          "border": 0.35,
+          "blur": 16,
+          "wallpaperBlur": 0,
+          "backgroundBrightness": 100,
+          "backgroundContrast": 100,
+          "backgroundSaturate": 100,
+          "wallpaperOpacity": 0,
+          "switchTransition": "cut",
+          "switchTransitionDir": "left",
+          "switchTransitionSpeed": "normal",
+          "rotationEnabled": false,
+          "rotationGroupId": "",
+          "rotationGroups": [],
+          "rotationSeeded": true,
+          "hiddenIds": [],
+          "playbackRate": 1,
+          "videoVolume": 0,
+          "videoAudioEnabled": true,
+          "fpsCap": 0,
+          "sceneLive": true,
+          "sceneLiveFps": 30,
+          "liveBootDelay": 3,
+          "audioSource": "auto",
+          "adapterTarget": "auto",
+          "mediaIntegration": true,
+          "mediaLyricsOnline": true,
+          "userProps": {},
+          "pauseOnHidden": true,
+          "pauseOnBlur": false,
+          "pauseOnBattery": false,
+          "flip": false,
+          "objectFit": "cover",
+          "contentRatingFilter": "everyone",
+          "typeFilter": "image",
+          "pickerLayout": "fixed",
+          "edgeCompat": true,
+          "accent": "#4f8cff",
+          "glassAlpha": 25,
+          "glassColor": {
+            "light": "#ffffff",
+            "dark": "#ffffff"
+          },
+          "glassDarkSeparate": false,
+          "glassFidelity": 100,
+          "capsuleBlur": 8,
+          "capsuleColor": "#ffffff",
+          "chatGlassFidelity": 100,
+          "extraGlassSelectors": "",
+          "leftSidebarGlass": false,
+          "leftSidebarCornerRadius": "20",
+          "leftSidebarSquareTL": true,
+          "leftSidebarSquareTR": false,
+          "leftSidebarSquareBR": false,
+          "leftSidebarSquareBL": true,
+          "rightSidebarCornerRadius": "20",
+          "rightSidebarSquareTL": false,
+          "rightSidebarSquareTR": true,
+          "rightSidebarSquareBR": true,
+          "rightSidebarSquareBL": false,
+          "titlebarGlass": false,
+          "thinkingGlass": false,
+          "thinkingNative": false,
+          "settingsVersion": 6,
+          "glassMode": {
+            "sidebar": "inherit",
+            "sidebarContent": "inherit",
+            "settingsWindow": "inherit",
+            "conversation": "inherit",
+            "thinkingTrigger": "inherit",
+            "floaters": "inherit"
+          },
+          "settingsWindowTransparency": 100,
+          "settingsWindowBlur": 60,
+          "conversationColor": "#ffffff",
+          "thinkingTriggerTransparency": 100,
+          "thinkingTriggerBlur": 60,
+          "floatersTransparency": 100,
+          "floatersBlur": 60,
+          "leftSidebarTransparency": 100,
+          "leftSidebarBlur": 60,
+          "titlebarTransparency": 100,
+          "titlebarBlur": 60,
+          "sidebarGlass": true,
+          "sidebarFullClear": false,
+          "sidebarFollowGlobal": true,
+          "sidebarBlur": 16,
+          "sidebarAlpha": 60,
+          "sidebarColor": "#ffffff",
+          "sidebarContentAlpha": 38,
+          "sidebarContentColor": "",
+          "ropeShown": true,
+          "ropeForm": "deepseek",
+          "ropeScale": 1,
+          "noticeSeen": "1.3.3",
+          "fontCustom": false,
+          "sceneLiveFailures": {},
+          "caretColor": "",
+          "uiColorCustom": false,
+          "uiColorSend": "",
+          "uiColorLink": "",
+          "uiColorFileIcon": "",
+          "uiColorTab": "",
+          "uiColorDeepDiving": "",
+          "themeFollow": false,
+          "fxEnabled": false,
+          "fxClick": true,
+          "fxClickStyle": "ripple",
+          "fxClickSize": 140,
+          "fxClickGlow": 60,
+          "fxTrail": true,
+          "fxTrailStyle": "comet",
+          "fxTrailLength": 420,
+          "fxTrailWidth": 3,
+          "fxTrailGlow": 60,
+          "fxOpacity": 85,
+          "fxBlend": "screen",
+          "fxColorMode": "accent",
+          "fxColor": "#4f8cff",
+          "parallaxEnabled": false,
+          "parallaxBg": 1,
+          "parallaxMascot": true,
+          "parallaxUi": false,
+          "parallaxPlugin": false,
+          "parallaxUiChatDepth": 1.2,
+          "parallaxUiComposerDepth": 1.8,
+          "parallaxUiSidebarDepth": 1.6,
+          "parallaxUiBubbleDepth": 1.4,
+          "parallaxPluginDepths": {},
+          "parallaxSmooth": 85,
+          "layerPositionX": 52,
+          "layerPositionY": 50,
+          "layerScale": 100,
+          "avatarEnabled": false,
+          "avatarSize": 40,
+          "avatarRadius": 100,
+          "avatarUserImage": "",
+          "avatarAiImage": "",
+          "mascotImage": "",
+          "mascotImageBox": "",
+          "skinYieldRestoreId": "",
+          "skinYieldRestoreRotation": false
+        }
+      }
+    },
+    "readback": {
+      "settings": null,
+      "betterSidebar": false,
+      "adapter": {
+        "detected": "browser",
+        "fence": false,
+        "target": "browser"
+      }
+    },
+    "uiValue": "25",
+    "visibleErrors": [],
+    "unsavedWarning": false,
+    "actualFailureObserved": true,
+    "restored": 20
+  },
+  "slider-repeat-result.json": {
+    "before": 1,
+    "after": 0,
+    "afterRemount": {
+      "numericInputs": 1
+    },
+    "errors": []
+  },
+  "research": {
+    "upstreamIssuesIncludingPRs": 256,
+    "commentPages": 156,
+    "comments": 447,
+    "relevant": [
+      {
+        "number": 261,
+        "title": "fix(壁纸属性): 拖动颜色/滑块不再每格 emit —— React 的 onChange 是逐格 input，不是抬手",
+        "url": "httpREDACTED_LOCAL_PATH"
+      },
+      {
+        "number": 255,
+        "title": "第三批本机修复：轮播列表空选会跳图 / 自动轮转行常驻 / 库视图关闭卡清空壁纸 / 边框滑杆覆盖 / 数值框可输入（1.3.3，附根因）",
+        "url": "httpREDACTED_LOCAL_PATH"
+      },
+      {
+        "number": 253,
+        "title": "设置面板布局：分段控件被挤成竖列、色板行不齐、单条节标题重复（1.3.3，附本机修法）",
+        "url": "httpREDACTED_LOCAL_PATH"
+      },
+      {
+        "number": 252,
+        "title": "[外部测评] dsh-wallpaper-engine 1.3.3：1 条问题汇总 —— project.json 的 file / preview 不做目录包含校验：第三方壁纸可让 /preview、/media、/scene-files 返回本机任意文件",
+        "url": "httpREDACTED_LOCAL_PATH"
+      },
+      {
+        "number": 240,
+        "title": "[bug] 壁纸库预览卡死：自定义图片壁纸没有缩略图管线，卡片直接加载 8K 原图（43MP × 24 张/页）",
+        "url": "httpREDACTED_LOCAL_PATH"
+      },
+      {
+        "number": 158,
+        "title": "[bug] 装插件后桌面端启动变慢，且必须等插件加载完才能新建会话：immediately 客户端包进启动关键路径 + 大库 inventory 全量扫描",
+        "url": "httpREDACTED_LOCAL_PATH"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "results": {
+    "mode": "save-failure",
+    "hostBefore": 20,
+    "uiDuring": "25",
+    "failedPuts": 1,
+    "hostDuring": 20,
+    "visibleErrors": [],
+    "unsavedText": false,
+    "uiAfterReload": "20",
+    "successControl": {
+      "ui": "25",
+      "host": 25
+    }
+  },
+  "errors": []
+}

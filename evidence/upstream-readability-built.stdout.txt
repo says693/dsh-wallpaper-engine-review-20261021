@@ -1,0 +1,89 @@
+PASS | F1a the floor is an explicit named pair of JS constants | READABILITY_FLOOR=0.45 READABILITY_FLOOR_DARK=0.59
+PASS | F1b the injected stylesheet was extracted + evaluated (no interpolation surprise) | css chars=231396 · template error=null
+PASS | F1c --we-readability-floor(-base) / --we-readability-base are declared for both themes (base = 染色地板 tint) | light=[0.45,"#ffffff"] dark=[0.59,"#0d1524"]
+PASS | F1d the stylesheet floor EQUALS the JS constant (no drift) | css=0.45/0.59 js=0.45/0.59
+PASS | F1e both theme blocks compose the floor with --we-glass-fidelity (default 1 = 逐位现状) | composed declarations=2 (expect 2: light + dark)
+PASS | F1f both theme blocks declare the chat-scoped floor/base pair (composed with --we-chat-glass-fidelity, default 1) | chat floor declarations=2 (expect 2)
+PASS | F2c the chat-scoped pair is consumed ONLY by bubble/input tokens (light+dark = 4 uses); the markdown content family stays on the global pair | chat base uses=4 (expect 4) · markdown family on global pair=true
+PASS | C0 the surface-tint clamp function ships in the bundle and clamps #000/#7f7f7f/#ffffff per theme | extracted=true · tints={"light #000000":[233,233,233],"light #7f7f7f":[233,233,233],"light #ffffff":[255,255,255],"dark #000000":[0,0,0],"dark #7f7f7f":[28,28,28],"dark #ffffff":[28,28,28]}
+PASS | C0f the fidelity tier: default byte-identical, 0 passes the raw color, the lerp toward raw is monotone and sandwiched | default==f1:true · f0原色直出:true · 单调回退:true (dark dists=0/96/192/288/384) · f0.5夹逼:true
+PASS | C0b the accent-ink function ships and picks a contrast-safe foreground per accent luminance (#127) | extracted=true yellow→#0f1115(12.9:1) blue→#ffffff(3.2:1)
+PASS | F2a every text-bearing surface token carries the readability floor (veil form) | 39 surface(s) checked · missing/broken=0
+PASS | F2c chat fill uses the slider directly in both themes, no opacity floor
+PASS | negative control: the rejected 88% canvas fails the transparency contract
+PASS | F2d bubble and message fences retain their slider fill; composer stays outside the thinking-glass scope
+PASS | F2dN every [class*="_bubble"] rule excludes the host Tooltip (role="tooltip") | 4 条 _bubble 规则全部带 role 豁免
+PASS | negative control: chat-flow 作用域不能代替 role="tooltip" 豁免（A1-4）
+PASS | F2d2 reasoning and both file-card roots have no tint or backdrop blur
+PASS | F2d2b 思考触发条刻意不在清底组，且真的接了玻璃（令牌 + 模糊载体，门同为 thinking-glass）
+PASS | negative control: a tinted reasoning/file bar is not fully transparent
+PASS | F2d3 inline capsules restore ten-percent white mist and independent 8px frost
+PASS | F2d3b 推理正文（compact 变体）行内代码只撤模糊载体、保留胶囊填充（#197） | body[data-we-glass-page][data-we-thinking-glass] [data-chat-flow] :is([data-variant="think"], [class*="_thinkBody"], [data-vcp-reasoning-body], [data-vcp-reasoning]) :not(pre) > code
+PASS | F2d3b2 收口规则的特异性严格压过原 chip 规则（顺序无关，不靠后置取胜） | closing=0-4-3 · original=0-3-3
+PASS | negative control: 抽掉 [data-chat-flow] 后两条特异性相等，顺序又成为唯一决胜因素（#197）
+PASS | F2d3b3 收口规则带着语义锚点 [data-variant="think"]，不只挂类名后缀（#197）
+PASS | negative control: 少了思考玻璃门的收口规则等于全局摘霜（#197）
+PASS | F2d4 all seven tool result bodies are scoped to their chat slots and gates
+PASS | F2d4b generic IO glass covers the others family in normal and fallback modes
+PASS | negative control: tool glass without its chat-slot boundary is rejected
+PASS | F2d5 tool bodies retain theme tint, add six opacity points and clear nested canvases
+PASS | F2e fence rules are opt-in and message-scoped
+PASS | negative control: unguarded fence rules are rejected
+PASS | F2f native Shiki foregrounds remain untouched; inner canvas is transparent
+PASS | F2g VCP plain code follows theme foreground; 92% plate is fallback-only
+PASS | negative control: 同一条下限判据对"被改坏的声明"有牙 | real=color-mix(in srgb,
+				      var(--we-readability-base) calc(var · mutated=color-mix(in srgb,
+				      var(--we-glass-color, #ffffff) calc
+PASS | F2b the veil keeps a fixed weight while the tint keeps its own alpha (dark ×factor preserved) | dark tint factor=0.4
+PASS | F3 the editor/terminal content plate clamps its own alpha with max() | 3 content rule(s), all carrying max(calc(var(--we-readability-floor) * 100%), var(--we-content-surface-alpha, 88%))
+PASS | F4 the software-render fallback plate (#95) still clears the floor | fallback plate=92% · floor=0.59
+PASS | F5 桌面壳的外壳画布底被清掉（否则整窗盖住壁纸 = 像没选壁纸），且不钉模式名 | 1 rule(s): data-we-adapter^="desktop-"][data-we-wallpaper] .dshDesktopFrame · 负对照[不透明]=ok · 负对照[仅注释]=ok · 负对照[钉住单一模式名]=ok
+PASS | F6 画布兜底色落在 html 元素上（body 侧会被宿主 darwin 的透明规则盖掉） | carrier="html" · 负对照[换成 body]=ok
+PASS | C1a the glass-alpha mapping was derived from the source | mapping=["0.10","0.25","100","0.15"]
+PASS | C1b full grid: effective composer-surface alpha ≥ floor (玻璃透明度 × 壁纸透明度 × theme) | light α=0.5875/0.5751/0.5628/0.5504/0.538 (floor 0.45) · dark α=0.631/0.6273/0.6236/0.6199/0.6162 (floor 0.59)
+PASS | C1c full grid: worst-case WCAG contrast of body text ≥ 4.5:1 (玻璃色 黑/中灰/白 × 滑杆 × 主题 × 壁纸透明度) | light #000000 @0 → 5.99:1 · light #7f7f7f @0 → 5.99:1 · light #ffffff @0 → 7.08:1 · dark #000000 @0 → 6.47:1 · dark #7f7f7f @0 → 4.97:1 · dark #ffffff @0 → 4.97:1 … 共 15×2 格 (worst backdrop: light #000, dark #fff)
+PASS | C2 the floor is NOT reduced at 玻璃透明度 = 60 (most transparent end) | min alpha light=0.538 dark=0.6162 vs floors 0.45/0.59
+PASS | C3a the floor never reads --we-wallpaper-opacity: surface alpha is identical for 壁纸透明度 {0,50,90} | floor declarations mention --we-wallpaper-opacity=false · α=0.56275/0.56275/0.56275 (identical) · backdrop contrast=5.55/10.92/17.06 (moves)
+PASS | C3b 壁纸透明度 stays scoped to the wallpaper layer (opaque padded layer + fade on the media leaf) | .we-layer opacity="1" · bg="var(--we-wallpaper-fade-bg, transparent)" · .we-layer .we-media opacity="var(--we-wallpaper-opacity, 1)"
+PASS | C4b 玻璃透明度 still changes the effective alpha monotonically (no flattening) | light 0.5875 > 0.5751 > 0.5628 > 0.5504 > 0.538 · dark 0.631 > 0.6273 > 0.6236 > 0.6199 > 0.6162
+PASS | C5 the dark-theme tint factor cannot lower the veil (floor holds even at tint alpha 0) | veil alpha at tint 0 = 0.59 · floor=0.59 > tint factor=0.4
+PASS | M1 the OLD (un-floored) surface really fails 4.5:1 — this assertion has teeth | worst before=1.00:1 (dark @ 玻璃透明度=0, 壁纸透明度=0, α=0.1000) · worst after=Infinity:1 · best a max() clamp on the dark tint could reach=1.00:1 (why the floor is a layer)
+PASS | M2 contrast/veil helpers hold their positive + negative controls | 6 controls, failed=[]
+PASS | C6s comment balance + .we-layer survives comment-stripping as position:fixed with a negative z-index | comments 315/315 · .we-layer position="fixed" z-index="-2"
+PASS | C6t styles.js 的 CSS 模板内无裸反引号（会把模板提前终止, 报错却指向别处） | 0 个裸反引号 · 首个在  · 族模板体 273983 B
+PASS | negative control C6t-1: 合成一个裸反引号会被同一条判据判出
+PASS | F7a 全透明规则组在位（≥3 条）且每条都带壁纸门（无壁纸时不生效） | 3 条 · 缺壁纸门 0
+PASS | F7b 容器覆盖规则把地板/色染/釉光六个变量归零 | 六项齐
+PASS | F7c 右栏显式接管：展开态门 + 透明 !important + 釉光关掉 | body[data-we-wallpaper][data-we-sidebar-fullclear] [data-sidebar-right-panel][data-sidebar-right-ope
+PASS | F7d 左栏显式接管：浅深两个选择器都在（深色带 data-ds-dark-theme 提权压软件渲染兜底） | 选择器 2 个
+PASS | F7e 设置键默认关且 kind 为 boolFalse（默认态地板照旧兜底）
+PASS | F7f 门控属性有挂有摘：applyGlass 成对（if/else）+ clearEffects 卸载再摘一次（rem ≥2） | set=1 rem=2 paired=true
+PASS | F7g UI 行存在且文案过 weT（新中文必须进 weT + 词表）
+PASS | negative control F7-1: 缺壁纸门的全透明规则会被同一条判据判出
+PASS | negative control F7-2: 默认 true（地板默认被拿掉）或缺 kind 会被同一条判据判出
+PASS | negative control F7-3: 六变量缺一项会被同一条判据判出
+PASS | negative control F7-4: 只挂不摘（漏 clearEffects 那次）会被同一条判据判出
+PASS | F8 原生下拉弹层选项行：全局 option / optgroup + 自家 picker 三条读 --we-popup-row-bg / -ink，选中行读 accent-src + checked-ink | global=1 · optgroup=1 · checked=1 · picker=1 · 选择器 select option | select option:checked | .we-picker select option, .we-picker__select opt
+PASS | negative control F8-1: 全局那条底色改回半透明玻璃（弹层再次浅底浅字）会被判出
+PASS | negative control F8-2: 全局那条丢掉墨色声明会被判出
+PASS | negative control F8-3: 只剩自家 picker 那条、全局那条缺失会被判出
+PASS | negative control F8-4: 选中行底色改回 transparent（UA 蓝底下自定义墨不可控）会被判出
+PASS | negative control F8-5: 选中行填充改读 --we-accent（设置窗内被掐成 initial ⇒ 恒落兜底、与用户配色脱钩）会被判出
+PASS | negative control F8-6: 分组标签 optgroup 那条缺失会被判出
+PASS | F9 弹层行配对函数随产物交付且可独立复算
+PASS | F9a 七档墨色的行底都解析成不透明 #rrggbb 且与墨色对比度 ≥4.5:1 | 最差 中灰（两臂最窄处） → #131418 vs #7f7f7f = 4.60:1 · 全档 15.80/13.37/16.42/21.00/4.60/11.59/9.16
+PASS | F9b 主题默认墨色下逐位还原现状（浅 #ffffff+宿主深墨 / 深 #1e1f26+宿主浅墨） | light=#ffffff/#1f2328 · dark=#1e1f26/#e6e8eb
+PASS | F9c 输入缺失 / 不可解析 ⇒ 返回 null，交给样式表缺省兜底（不写脏值）
+PASS | negative control F9-1: 不做钳制（一律给 #ffffff 行底）在纯白墨上会被同一条网格判红 | naive worst=1.00:1
+PASS | F10 选中行墨函数随产物交付且可独立复算
+PASS | F10a 连续/自适应网格上选中行墨都是黑/白且对比度 ≥4.5:1 | 网格 4388 档 · 最差 #8756ed vs #000000 = 4.584:1 · 低于 4.5 的档数 0
+PASS | F10a-2 两支只出纯黑 / 纯白（不得再混进有色深墨 #0f1115） | 不同取值 #ffffff / #000000
+PASS | F10b 输入缺失 / 不可解析 ⇒ 返回 null，交给样式表缺省兜底（不写脏值）
+PASS | F10c 缺省兜底墨 = JS 对缺省填充的判决（兜底不得落回固定 #0f1115，也不得与其不一致） | CSS 兜底对 #4f8cff × #000000 · JS 判决 #000000
+PASS | F10c-2 样式表缺省兜底对也 ≥4.5:1 | 缺省对 = 6.53:1
+PASS | negative control F10-1: 旧实现（白 vs #0f1115 取大，PR #203 原样）会被同一条网格判红 | old worst=4.3482:1
+PASS | negative control F10-1b: 暗臂只放到 #0a0a0a（Lin≈0.0028，看着够深）仍会被同一条网格判红 | #0a0a0a worst=4.4502:1
+PASS | negative control F10-2: 沿用按钮那条 0.45 阈值（中亮度 accent 上给白字）会被同一条网格判红 | naive worst=2.10:1
+PASS | negative control F10-3: 旧的九档采样面对旧实现漏判（该面最差 ≥4.5 ⇒ 全绿）—— 采样面必须连续 | 旧实现九档最差=4.72:1
+
+ALL READABILITY FLOOR CHECKS PASSED

@@ -1,0 +1,25 @@
+{
+  "results": {
+    "mode": "large-preview",
+    "image": {
+      "naturalWidth": 8000,
+      "naturalHeight": 5334,
+      "displayWidth": 130.75,
+      "displayHeight": 92
+    },
+    "preview": {
+      "status": 200,
+      "bytes": 180662,
+      "headers": {
+        "content-type": "image/png",
+        "accept-ranges": "bytes",
+        "content-length": "180662",
+        "date": "Wed, 21 Oct 2026 06:42:57 GMT",
+        "connection": "keep-alive",
+        "keep-alive": "timeout=5"
+      }
+    },
+    "originalBytes": 180662
+  },
+  "errors": []
+}

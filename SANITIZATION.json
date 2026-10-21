@@ -1,0 +1,125 @@
+{
+  "policy": "strict allowlist; original local evidence unchanged",
+  "notPublished": [
+    "raw host/process logs",
+    "auth URL files",
+    "browser profiles/cookies",
+    "daily DSH_HOME",
+    "raw page DOM",
+    "private config",
+    "personal projects",
+    "Workshop files"
+  ],
+  "screenshots": "from public replay, runtime path mask",
+  "sourceFiles": "copied byte-for-byte, not passed through text replacement",
+  "evidenceCopies": [
+    {
+      "file": "evidence/slider-normal-result.json",
+      "originalSha256": "cce10fd0bbb88ada8f2ec4a431405b1d016cca3714b5813c5b8257059fec5676",
+      "publishedSha256": "98893642286847f67ee47cc3a7fb02b01f765808630594d72efb96f09c62451e",
+      "transformation": "structured JSON; remove raw DOM/media URLs; redact local paths/loopback URLs"
+    },
+    {
+      "file": "evidence/slider-repeat-result.json",
+      "originalSha256": "a87843f7aaa5cb241070133e07a9b1f2f15c4be86ad35ada3eac6bde1b4b5b9e",
+      "publishedSha256": "70a9d7c0a99f61e177619b3471d7d362e2707e8cf049941e50ac66cd4ed784e9",
+      "transformation": "structured JSON; remove raw DOM/media URLs; redact local paths/loopback URLs"
+    },
+    {
+      "file": "evidence/save-failure-normal-result.json",
+      "originalSha256": "e427869b2ba863a1cf6e32502c7c94904f74324e9be644a645b5245264538230",
+      "publishedSha256": "d5d62d3fec3f742df7f59457fbbfe02a799bee541fcc24ba42e82810df7c0960",
+      "transformation": "structured JSON; remove raw DOM/media URLs; redact local paths/loopback URLs"
+    },
+    {
+      "file": "evidence/disk-error-normal-result.json",
+      "originalSha256": "3736fc48a3ab439e6813bfab71cf455e4b6cc370be0ce0de4d30eed06a60f9bb",
+      "publishedSha256": "69ba1a9fa492a2653d737e9a47b13ff6c267244870af9141efb1d4638ee7d0e9",
+      "transformation": "structured JSON; remove raw DOM/media URLs; redact local paths/loopback URLs"
+    },
+    {
+      "file": "evidence/large-preview-normal-r2-result.json",
+      "originalSha256": "14337774429211550d8049966b68527cf9807eb591355db53cca221c18bbef74",
+      "publishedSha256": "7c8037169fdffe5748de2be97e62c23c5840d9e3702b437b074d7a734bfc4e89",
+      "transformation": "structured JSON; remove raw DOM/media URLs; redact local paths/loopback URLs"
+    },
+    {
+      "file": "evidence/restart-normal-result.json",
+      "originalSha256": "a47576e2dae4a5c48c4dd92fdba99bf6f20adedcf7ae681a972e7892d065a6c2",
+      "publishedSha256": "77b8cca0de63a88e8bf9cccf0bb7d35d4d260f6a4a7a0808dfa21f39be6e6c01",
+      "transformation": "structured JSON; remove raw DOM/media URLs; redact local paths/loopback URLs"
+    },
+    {
+      "file": "evidence/interactions-normal-result.json",
+      "originalSha256": "57688c007e38e2ba9261165c87c44a63eb9d47cf37a7cd8e61eba769f6fed934",
+      "publishedSha256": "14162f8fba95f72b971b7ffe91ff33592eca0c3d09c7b611e020e1de1f40ba2f",
+      "transformation": "structured JSON; remove raw DOM/media URLs; redact local paths/loopback URLs"
+    },
+    {
+      "file": "evidence/matrix-normal-done.json",
+      "originalSha256": "7009a0af5ba0a4bef55ca94f5aa599b7424691ab6679371592901baeecd3d5f4",
+      "publishedSha256": "fc50c72ff85d9688fbb04fbff97823586dbdd543f22392e40368b48f21893f1c",
+      "transformation": "structured JSON; remove raw DOM/media URLs; redact local paths/loopback URLs"
+    },
+    {
+      "file": "evidence/report-spec-check-r2.json",
+      "originalSha256": "0d59d87fcaede8cc7c7dec73beea554feb7a786f77d907e88e3a5d31142abbcd",
+      "publishedSha256": "a4049e7ba8fdae282146ed06b74ee63eb5232362afc07682f60791cf3388e457",
+      "transformation": "structured JSON; remove raw DOM/media URLs; redact local paths/loopback URLs"
+    },
+    {
+      "file": "evidence/report-wording-check-r2.json",
+      "originalSha256": "6b56471409e56b4d5a3675abddeb081af4e5acfe05235218385808d5cace15f0",
+      "publishedSha256": "7676b85b33b08e81409caf4f996819f62ca688f21369fcd67e9fb72a1705281b",
+      "transformation": "structured JSON; remove raw DOM/media URLs; redact local paths/loopback URLs"
+    },
+    {
+      "file": "evidence/install-normal-r2.stdout.txt",
+      "originalSha256": "0224aeb68f9b59d41a65c3dcab406d08cbb08a0da7e0a925b267c20721207001",
+      "publishedSha256": "9683033fd3ea8959ebd6c08d3c5a3bb03da121fad777cbef806b9f0cdf324a99",
+      "transformation": "text evidence copy only; redact local paths/loopback URL"
+    },
+    {
+      "file": "evidence/upstream-config-store.stdout.txt",
+      "originalSha256": "b8ecdf28658f991c584af4ca4b60189a6605be372d1bc24f0c3609514577b333",
+      "publishedSha256": "a2c2beca461c2ff643ce27feef8f5d334d778d350904d2ef2bfa54a75a429e26",
+      "transformation": "text evidence copy only; redact local paths/loopback URL"
+    },
+    {
+      "file": "evidence/upstream-api-client-built.stdout.txt",
+      "originalSha256": "a03197cdeaeb519039bc193b1bef6b999e652db7b35c5632f3b325ef2636ebee",
+      "publishedSha256": "c6e1bb9dcb71614528ea6c0c13063518d22ee81cc753ef34add563d4b3409f58",
+      "transformation": "text evidence copy only; redact local paths/loopback URL"
+    },
+    {
+      "file": "evidence/upstream-picker-model-built.stdout.txt",
+      "originalSha256": "f4790286a6e8425ee3d76fbf1ac0b29c9cf6d1de3460578ce57a302ea10c0858",
+      "publishedSha256": "327335e49deb7ed4fd6d1f13f65e293518f6a95f911ae0ee96305a1ada7d2636",
+      "transformation": "text evidence copy only; redact local paths/loopback URL"
+    },
+    {
+      "file": "evidence/upstream-playback-controls-built.stdout.txt",
+      "originalSha256": "0504fdad29ee972281f4574b1636b08de687228a03185f773ecc660c6f18cc1d",
+      "publishedSha256": "b628809b7ccf3c4b3dbebfe4192ef8deef5d36c7b315f7f2c31e6e4ab3425283",
+      "transformation": "text evidence copy only; redact local paths/loopback URL"
+    },
+    {
+      "file": "evidence/upstream-client-built.stdout.txt",
+      "originalSha256": "d0a5ea84e3d00a7b811cb0550e1836a89b66d9c48c5147c71def45a84af8bd9c",
+      "publishedSha256": "e0a5e0344e5651d5e034bf58788032bbaa8c5904b2c788115fc041d01ba24ba4",
+      "transformation": "text evidence copy only; redact local paths/loopback URL"
+    },
+    {
+      "file": "evidence/upstream-readability-built.stdout.txt",
+      "originalSha256": "b5afa0c6bf521cd7dcffe64fb74e2c1f85c0c49fb80b8ae7874cfd5911c0dade",
+      "publishedSha256": "d9a7c3097e7f8b825f02f1a43d40b08883e23a94732fa43187e01446fb6c61ca",
+      "transformation": "text evidence copy only; redact local paths/loopback URL"
+    },
+    {
+      "file": "evidence/upstream-theme-follow-built.stdout.txt",
+      "originalSha256": "eefa8fa8e6a7f7801515b081321750d944d127c757607a88c849e9f7e76387d6",
+      "publishedSha256": "68332e4a98187208c2606670a2289d69171bd6fa461d96489c76748e208e1f82",
+      "transformation": "text evidence copy only; redact local paths/loopback URL"
+    }
+  ]
+}

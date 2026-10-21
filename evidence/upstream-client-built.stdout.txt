@@ -1,0 +1,77 @@
+sidebar glass selectors are wallpaper-independent: true · page glass is anchored on data-we-glass-page: true
+registered id: dsh-plugin-wallpaper-engine
+factory keys: [ 'apply', 'inject' ]
+inject: ["slots"]
+Symbol.toStringTag: [object Module]
+apply threw: (none)
+slot registrations: [{"key":"settings.section","id":"wallpaper-engine","order":500},{"key":"sidebar.right.pane.tab"}]
+registered as first-level settings.section: true
+section id: wallpaper-engine
+section label: [Function: label]
+body children ids: []
+has wallpaper layer: false
+has scrim: false
+body[data-we-wallpaper]: undefined
+--we-scrim-color: "rgba(0,0,0,0.25)"
+--we-border-alpha: "0.35"
+--we-blur: "16px"
+--we-wallpaper-opacity (default 0% → unset): undefined
+--we-accent: "#4f8cff"
+--we-glass-alpha: "0.22"
+--we-glass-color: "#ffffff"
+body[data-we-glass-window] (default on): "on"
+  ✓ 首载态：库存应答挂起时只渲染扫描提示
+  ✓ 首载态：应答放行后提示消失、入口出现
+--we-wallpaper-underlay: "rgb(18, 52, 86)"
+  ✓ rotation timer scheduled (5min)
+  ✓ 切换过场 renders a dropdown with all seven transitions
+  ✓ 默认过场是硬切（未设置时）
+  ✓ rotation prepare: ready-commit switches layer to next (b/media/def)
+  ✓ rotation fade: old layer marked weFading
+  ✓ rotation fade: old layer yielded LAYER_ID
+  ✓ 画布兜底色：换到「颜色未填」的壁纸后根元素不再保留上一张的颜色
+  ✓ rotation fade: new layer carries the switch classes
+  ✓ rotation fade: 交叉淡化基准 = ROTATION_FADE_MS (1800ms)
+  ✓ rotation prepare: commit persisted (id b)
+  ✓ rotation prepare: timer re-armed after commit
+  ✓ rotation prepare: second ready-commit wraps (a/media/xyz)
+  ✓ rotation fade: second switch also animates
+  ✓ rotation fade: previous fading layer retired immediately
+  ✓ rotation timer re-armed for the 推移 case
+  ✓ 推移：新层带 switch 类（入场层走通用 transition）
+  ✓ 推移：基准 700ms 写入 --we-switch-ms
+  ✓ 推移：新层终态回到 translate3d(0,0,0)
+  ✓ 推移：旧层同时位移出场并被压到新层之下
+  ✓ 推移：过场结束后清理定时器已排（ms+60）
+  ✓ 推移：收尾后新层回到干净的 we-layer（内联样式清空）
+  ✓ rotation timer re-armed for the 条带 case
+  ✓ 条带：终态覆盖满屏且封闭边在右侧（方向 left）
+  ✓ 条带：N 块板的深度点都在（百叶窗，不是锯齿擦除）—— 点数 = 4N+1
+  ✓ rotation timer re-armed for the 硬切 case
+  ✓ 硬切：旧层立即拆除（不进过渡路径）
+  ✓ 硬切：新层没有任何 switch 类或临时样式
+other tabs keep their controls out of the tree: true
+caret style injected with caret-color rule: true
+caret 自动 restores native caret: true
+边框 / 雾化 已迁到外观（效果里不再有）: ok
+壁纸透明度 drives --we-wallpaper-opacity (0.4 @60%, unset @0%): true
+  ✓ 虚拟首窗：30 张卡（关闭卡 + 29）
+  ✓ 虚拟首窗：库视图不再渲染分页器
+  ✓ 虚拟首窗：含首张（Wall 0）与窗尾（Wall 28）
+  ✓ 虚拟首窗：窗外条目不渲染（Wall 29 / Video A / Scene C）
+  ✓ 筛选：无 frameUrl 的场景（Scene D）不进网格
+  ✓ 筛选：默认 Everyone 下 PG13 不进网格
+  ✓ 虚拟首窗：搜索框在（窗外条目经它可达）
+  ✓ 虚拟首窗：搜索收敛后远端条目（Video A）落进首窗
+  ✓ 负对照：卡片判据不把近似类名算进去（多算一张就会被判出）
+  ✓ 负对照：搜索收敛判据两侧都真（清空后 Video A 回到窗外）
+sidebar glass remains armed without an active wallpaper: true
+实时帧：重新截 + 微缩预览: ok
+省电 / live 诊断已迁到高级（效果里不再有）: ok
+GPU 帧提示 + 清除入口链路: ok
+GPU 帧优先于静态帧（清除后回落静态帧链，不再有 CPU 渲染）: ok
+条带几何（板 + 缝 · 两端退化）: ok
+CPU 动画渲染路线已删除（源码钉死 + 行为级零请求）: ok
+sceneVideo 时序补拉（一次 · 不自触发）: ok
+
+ALL CLIENT CHECKS DONE

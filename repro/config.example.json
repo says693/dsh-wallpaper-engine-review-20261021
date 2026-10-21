@@ -1,0 +1,6 @@
+{
+  "node": "C:/Program Files/node.exe",
+  "dshCli": "C:/PATH/TO/@deepseek-ai/dsh/lib/bin.js",
+  "playwrightModule": "C:/PATH/TO/node_modules/playwright/index.mjs",
+  "browser": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+}

@@ -1,0 +1,1803 @@
+{
+  "completed": true,
+  "observations": [
+    {
+      "action": "dismiss-onboarding",
+      "button": "保持我的设置"
+    },
+    {
+      "action": "dismiss-onboarding",
+      "button": "继续"
+    },
+    {
+      "action": "dismiss-onboarding",
+      "button": "稍后配置"
+    },
+    {
+      "case": "upload",
+      "settings": {
+        "settings": {
+          "id": "",
+          "scrim": 0.25,
+          "border": 0.35,
+          "blur": 16,
+          "wallpaperBlur": 0,
+          "backgroundBrightness": 100,
+          "backgroundContrast": 100,
+          "backgroundSaturate": 100,
+          "wallpaperOpacity": 0,
+          "switchTransition": "cut",
+          "switchTransitionDir": "left",
+          "switchTransitionSpeed": "normal",
+          "rotationEnabled": false,
+          "rotationGroupId": "",
+          "rotationGroups": [],
+          "rotationSeeded": true,
+          "hiddenIds": [],
+          "playbackRate": 1,
+          "videoVolume": 0,
+          "videoAudioEnabled": true,
+          "fpsCap": 0,
+          "sceneLive": true,
+          "sceneLiveFps": 30,
+          "liveBootDelay": 3,
+          "audioSource": "auto",
+          "adapterTarget": "auto",
+          "mediaIntegration": true,
+          "mediaLyricsOnline": true,
+          "userProps": {},
+          "pauseOnHidden": true,
+          "pauseOnBlur": false,
+          "pauseOnBattery": false,
+          "flip": false,
+          "objectFit": "cover",
+          "contentRatingFilter": "everyone",
+          "typeFilter": "image",
+          "pickerLayout": "fixed",
+          "edgeCompat": true,
+          "accent": "#4f8cff",
+          "glassAlpha": 20,
+          "glassColor": {
+            "light": "#ffffff",
+            "dark": "#ffffff"
+          },
+          "glassDarkSeparate": false,
+          "glassFidelity": 100,
+          "capsuleBlur": 8,
+          "capsuleColor": "#ffffff",
+          "chatGlassFidelity": 100,
+          "extraGlassSelectors": "",
+          "leftSidebarGlass": false,
+          "leftSidebarCornerRadius": "20",
+          "leftSidebarSquareTL": true,
+          "leftSidebarSquareTR": false,
+          "leftSidebarSquareBR": false,
+          "leftSidebarSquareBL": true,
+          "rightSidebarCornerRadius": "20",
+          "rightSidebarSquareTL": false,
+          "rightSidebarSquareTR": true,
+          "rightSidebarSquareBR": true,
+          "rightSidebarSquareBL": false,
+          "titlebarGlass": false,
+          "thinkingGlass": false,
+          "thinkingNative": false,
+          "settingsVersion": 6,
+          "glassMode": {
+            "sidebar": "inherit",
+            "sidebarContent": "inherit",
+            "settingsWindow": "inherit",
+            "conversation": "inherit",
+            "thinkingTrigger": "inherit",
+            "floaters": "inherit"
+          },
+          "settingsWindowTransparency": 100,
+          "settingsWindowBlur": 60,
+          "conversationColor": "#ffffff",
+          "thinkingTriggerTransparency": 100,
+          "thinkingTriggerBlur": 60,
+          "floatersTransparency": 100,
+          "floatersBlur": 60,
+          "leftSidebarTransparency": 100,
+          "leftSidebarBlur": 60,
+          "titlebarTransparency": 100,
+          "titlebarBlur": 60,
+          "sidebarGlass": true,
+          "sidebarFullClear": false,
+          "sidebarFollowGlobal": true,
+          "sidebarBlur": 16,
+          "sidebarAlpha": 60,
+          "sidebarColor": "#ffffff",
+          "sidebarContentAlpha": 38,
+          "sidebarContentColor": "",
+          "ropeShown": true,
+          "ropeForm": "deepseek",
+          "ropeScale": 1,
+          "noticeSeen": "1.3.3",
+          "fontCustom": false,
+          "sceneLiveFailures": {},
+          "caretColor": "",
+          "uiColorCustom": false,
+          "uiColorSend": "",
+          "uiColorLink": "",
+          "uiColorFileIcon": "",
+          "uiColorTab": "",
+          "uiColorDeepDiving": "",
+          "themeFollow": false,
+          "fxEnabled": false,
+          "fxClick": true,
+          "fxClickStyle": "ripple",
+          "fxClickSize": 140,
+          "fxClickGlow": 60,
+          "fxTrail": true,
+          "fxTrailStyle": "comet",
+          "fxTrailLength": 420,
+          "fxTrailWidth": 3,
+          "fxTrailGlow": 60,
+          "fxOpacity": 85,
+          "fxBlend": "screen",
+          "fxColorMode": "accent",
+          "fxColor": "#4f8cff",
+          "parallaxEnabled": false,
+          "parallaxBg": 1,
+          "parallaxMascot": true,
+          "parallaxUi": false,
+          "parallaxPlugin": false,
+          "parallaxUiChatDepth": 1.2,
+          "parallaxUiComposerDepth": 1.8,
+          "parallaxUiSidebarDepth": 1.6,
+          "parallaxUiBubbleDepth": 1.4,
+          "parallaxPluginDepths": {},
+          "parallaxSmooth": 85,
+          "layerPositionX": 50,
+          "layerPositionY": 50,
+          "layerScale": 100,
+          "avatarEnabled": false,
+          "avatarSize": 40,
+          "avatarRadius": 100,
+          "avatarUserImage": "",
+          "avatarAiImage": "",
+          "mascotImage": "",
+          "mascotImageBox": "",
+          "skinYieldRestoreId": "",
+          "skinYieldRestoreRotation": false
+        },
+        "betterSidebar": false,
+        "adapter": {
+          "detected": "browser",
+          "fence": false,
+          "target": "browser"
+        }
+      }
+    },
+    {
+      "case": "library",
+      "cards": 2,
+      "images": [
+        {
+          "naturalWidth": 1600,
+          "naturalHeight": 1000
+        }
+      ]
+    },
+    {
+      "case": "tab",
+      "name": "外观",
+      "metrics": {
+        "panel": {
+          "x": 532,
+          "y": 154,
+          "width": 564,
+          "height": 1674
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "主题",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题随壁纸",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "细节",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题预设",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "预设方案",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "玻璃 UI",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "深色单独设置",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "玻璃颜色",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "额外补雾化的选择器",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          }
+        ],
+        "rows": [
+          {
+            "text": "主题随壁纸试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "x": 532,
+            "y": 283,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "边框35%",
+            "x": 532,
+            "y": 382,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "预设方案一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "x": 532,
+            "y": 467,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "保存当前为预设…导出预设…导入预设…",
+            "x": 532,
+            "y": 605,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "深色单独设置",
+            "x": 532,
+            "y": 700,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "玻璃颜色自定义",
+            "x": 532,
+            "y": 742,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "玻璃透明度20%",
+            "x": 532,
+            "y": 784,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "雾化16px",
+            "x": 532,
+            "y": 816,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "额外补雾化的选择器给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "x": 532,
+            "y": 848,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "玻璃保真度100%",
+            "x": 532,
+            "y": 894,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "思考块液态玻璃对话内容的三挡：关（半透明）/ 液态玻璃 / 原生（正文实色、输入框保持玻璃）关液态玻璃原生",
+            "x": 532,
+            "y": 926,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "左侧栏液态玻璃左侧栏也跟随玻璃配方（配色 / 玻璃颜色 / 透明度 / 雾化 / 边框）",
+            "x": 532,
+            "y": 972,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "标题栏液态玻璃标题栏也跟随玻璃配方（配色 / 玻璃颜色 / 透明度 / 雾化 / 边框）",
+            "x": 532,
+            "y": 1018,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "左侧栏 · 统一圆角四角都按这个值；单独标「直角」的角覆盖它跟随原生小 6px中 12px大 20px",
+            "x": 532,
+            "y": 1117,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "左侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 直角右上角 圆角右下角 圆角左下角 直角",
+            "x": 532,
+            "y": 1163,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "四角全直角四角全圆角",
+            "x": 532,
+            "y": 1209,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "右侧栏 · 统一圆角四角都按这个值；单独标「直角」的角覆盖它跟随原生小 6px中 12px大 20px",
+            "x": 532,
+            "y": 1251,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "右侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 圆角右上角 直角右下角 直角左下角 圆角",
+            "x": 532,
+            "y": 1297,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "四角全直角四角全圆角",
+            "x": 532,
+            "y": 1343,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "全局配色一处调全部：界面强调色、按钮、选中态与下面那几处都会跟着变自定义",
+            "x": 532,
+            "y": 1438,
+            "width": 564,
+            "height": 66,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "UI 配色自定义",
+            "x": 532,
+            "y": 1514,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "光标颜色输入框光标看不清时换个颜色（与上面的总开关无关，始终可调）自动自定义",
+            "x": 532,
+            "y": 1556,
+            "width": 564,
+            "height": 66,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "字体自定义",
+            "x": 532,
+            "y": 1685,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          }
+        ],
+        "unnamedControls": [
+          {
+            "type": "text",
+            "class": "we-picker__text"
+          }
+        ]
+      }
+    },
+    {
+      "case": "tab",
+      "name": "播放",
+      "metrics": {
+        "panel": {
+          "x": 532,
+          "y": 154,
+          "width": 564,
+          "height": 729
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "画面",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "适配",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "水平翻转",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "声音",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "壁纸音轨",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "关闭=静音（保留音量数值）· 开启时音量 0 自动 50%",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          }
+        ],
+        "rows": [
+          {
+            "text": "壁纸模糊0px",
+            "x": 532,
+            "y": 283,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "亮度100%",
+            "x": 532,
+            "y": 315,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "对比度100%",
+            "x": 532,
+            "y": 347,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "饱和度100%",
+            "x": 532,
+            "y": 379,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "水平%",
+            "x": 532,
+            "y": 411,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "垂直%",
+            "x": 532,
+            "y": 443,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "缩放%",
+            "x": 532,
+            "y": 475,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "壁纸透明度0%",
+            "x": 532,
+            "y": 507,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "暗化25%",
+            "x": 532,
+            "y": 539,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "适配覆盖填充居中拉伸",
+            "x": 532,
+            "y": 571,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "水平翻转",
+            "x": 532,
+            "y": 613,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "音量0%",
+            "x": 532,
+            "y": 704,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "壁纸音轨关闭=静音（保留音量数值）· 开启时音量 0 自动 50%",
+            "x": 532,
+            "y": 736,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          }
+        ],
+        "unnamedControls": []
+      }
+    },
+    {
+      "case": "tab",
+      "name": "系统",
+      "metrics": {
+        "panel": {
+          "x": 532,
+          "y": 154,
+          "width": 564,
+          "height": 1350
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "聊天吉祥物",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "显示吉祥物",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "关闭后隐藏吉祥物与壁纸仓库抽屉",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "吉祥物形态",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "浏览方式",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "紧凑布局",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "常规网格 · 分页",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "兼容性",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "Edge 兼容",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "Edge 下视频壁纸走 canvas 渲染",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "适配",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "适配目标",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "rows": [
+          {
+            "text": "显示吉祥物关闭后隐藏吉祥物与壁纸仓库抽屉",
+            "x": 532,
+            "y": 283,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "吉祥物形态Deepseek_Pro菲比啾比ClaudeDeepSeekGeminiGPTGLMGrokKimiQwen+自定义DeepSeek，第 4 个，共 11 个",
+            "x": 532,
+            "y": 329,
+            "width": 564,
+            "height": 300,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "吉祥物大小100%",
+            "x": 532,
+            "y": 639,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "紧凑布局常规网格 · 分页",
+            "x": 532,
+            "y": 720,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "Edge 兼容Edge 下视频壁纸走 canvas 渲染",
+            "x": 532,
+            "y": 815,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "适配目标自动检测 · 手选可覆盖自动检测原生浏览器非官方桌面端官方桌面端",
+            "x": 532,
+            "y": 910,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "最小化/切页时暂停",
+            "x": 532,
+            "y": 1032,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "窗口失焦时暂停",
+            "x": 532,
+            "y": 1074,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "使用电池时暂停",
+            "x": 532,
+            "y": 1116,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          }
+        ],
+        "unnamedControls": []
+      }
+    },
+    {
+      "case": "tab",
+      "name": "扩展",
+      "metrics": {
+        "panel": {
+          "x": 532,
+          "y": 154,
+          "width": 564,
+          "height": 739
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "扩展模块",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "启用自定义会话头像",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "给会话双方配上头像，消息像好友聊天一样左右分列",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "启用点击与拖尾效果",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "启用 3D 效果",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "rows": [
+          {
+            "text": "启用自定义会话头像给会话双方配上头像，消息像好友聊天一样左右分列",
+            "x": 543,
+            "y": 347,
+            "width": 542,
+            "height": 36,
+            "clientWidth": 542,
+            "scrollWidth": 542
+          },
+          {
+            "text": "启用点击与拖尾效果",
+            "x": 543,
+            "y": 542,
+            "width": 542,
+            "height": 32,
+            "clientWidth": 542,
+            "scrollWidth": 542
+          },
+          {
+            "text": "启用 3D 效果",
+            "x": 543,
+            "y": 699,
+            "width": 542,
+            "height": 32,
+            "clientWidth": 542,
+            "scrollWidth": 542
+          }
+        ],
+        "unnamedControls": []
+      }
+    },
+    {
+      "case": "tab",
+      "name": "关于",
+      "metrics": {
+        "panel": {
+          "x": 532,
+          "y": 154,
+          "width": 564,
+          "height": 1341.984375
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "📖 项目简介",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "⭐ 开源与支持",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "💬 加入交流群",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "🙏 贡献者致谢",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          }
+        ],
+        "rows": [],
+        "unnamedControls": []
+      }
+    },
+    {
+      "case": "tab-arrow-key",
+      "before": "外观",
+      "after": "外观",
+      "focused": "壁纸库"
+    },
+    {
+      "case": "responsive",
+      "size": {
+        "width": 1024,
+        "height": 768
+      },
+      "metrics": {
+        "panel": {
+          "x": 324,
+          "y": 78,
+          "width": 564,
+          "height": 1674
+        },
+        "clientWidth": 564,
+        "scrollWidth": 564,
+        "fontSamples": [
+          {
+            "text": "主题",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题随壁纸",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "细节",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题预设",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "预设方案",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "玻璃 UI",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "深色单独设置",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "玻璃颜色",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "额外补雾化的选择器",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          }
+        ],
+        "rows": [
+          {
+            "text": "主题随壁纸试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "x": 324,
+            "y": 207,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "边框35%",
+            "x": 324,
+            "y": 306,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "预设方案一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "x": 324,
+            "y": 391,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "保存当前为预设…导出预设…导入预设…",
+            "x": 324,
+            "y": 529,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "深色单独设置",
+            "x": 324,
+            "y": 624,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "玻璃颜色自定义",
+            "x": 324,
+            "y": 666,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "玻璃透明度20%",
+            "x": 324,
+            "y": 708,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "雾化16px",
+            "x": 324,
+            "y": 740,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "额外补雾化的选择器给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "x": 324,
+            "y": 772,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "玻璃保真度100%",
+            "x": 324,
+            "y": 818,
+            "width": 564,
+            "height": 22,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "思考块液态玻璃对话内容的三挡：关（半透明）/ 液态玻璃 / 原生（正文实色、输入框保持玻璃）关液态玻璃原生",
+            "x": 324,
+            "y": 850,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "左侧栏液态玻璃左侧栏也跟随玻璃配方（配色 / 玻璃颜色 / 透明度 / 雾化 / 边框）",
+            "x": 324,
+            "y": 896,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "标题栏液态玻璃标题栏也跟随玻璃配方（配色 / 玻璃颜色 / 透明度 / 雾化 / 边框）",
+            "x": 324,
+            "y": 942,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "左侧栏 · 统一圆角四角都按这个值；单独标「直角」的角覆盖它跟随原生小 6px中 12px大 20px",
+            "x": 324,
+            "y": 1041,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "左侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 直角右上角 圆角右下角 圆角左下角 直角",
+            "x": 324,
+            "y": 1087,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "四角全直角四角全圆角",
+            "x": 324,
+            "y": 1133,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "右侧栏 · 统一圆角四角都按这个值；单独标「直角」的角覆盖它跟随原生小 6px中 12px大 20px",
+            "x": 324,
+            "y": 1175,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "右侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 圆角右上角 直角右下角 直角左下角 圆角",
+            "x": 324,
+            "y": 1221,
+            "width": 564,
+            "height": 36,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "四角全直角四角全圆角",
+            "x": 324,
+            "y": 1267,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "全局配色一处调全部：界面强调色、按钮、选中态与下面那几处都会跟着变自定义",
+            "x": 324,
+            "y": 1362,
+            "width": 564,
+            "height": 66,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "UI 配色自定义",
+            "x": 324,
+            "y": 1438,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "光标颜色输入框光标看不清时换个颜色（与上面的总开关无关，始终可调）自动自定义",
+            "x": 324,
+            "y": 1480,
+            "width": 564,
+            "height": 66,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          },
+          {
+            "text": "字体自定义",
+            "x": 324,
+            "y": 1609,
+            "width": 564,
+            "height": 32,
+            "clientWidth": 564,
+            "scrollWidth": 564
+          }
+        ],
+        "unnamedControls": [
+          {
+            "type": "text",
+            "class": "we-picker__text"
+          }
+        ]
+      }
+    },
+    {
+      "case": "responsive",
+      "size": {
+        "width": 768,
+        "height": 900
+      },
+      "metrics": {
+        "panel": {
+          "x": 236,
+          "y": 104,
+          "width": 484,
+          "height": 1714
+        },
+        "clientWidth": 484,
+        "scrollWidth": 550,
+        "fontSamples": [
+          {
+            "text": "主题",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题随壁纸",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "细节",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题预设",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "预设方案",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "玻璃 UI",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "深色单独设置",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "玻璃颜色",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "额外补雾化的选择器",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          }
+        ],
+        "rows": [
+          {
+            "text": "主题随壁纸试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "x": 236,
+            "y": 233,
+            "width": 484,
+            "height": 36,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "边框35%",
+            "x": 236,
+            "y": 332,
+            "width": 484,
+            "height": 22,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "预设方案一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "x": 236,
+            "y": 417,
+            "width": 484,
+            "height": 36,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "保存当前为预设…导出预设…导入预设…",
+            "x": 236,
+            "y": 555,
+            "width": 484,
+            "height": 32,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "深色单独设置",
+            "x": 236,
+            "y": 650,
+            "width": 484,
+            "height": 32,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "玻璃颜色自定义",
+            "x": 236,
+            "y": 692,
+            "width": 484,
+            "height": 32,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "玻璃透明度20%",
+            "x": 236,
+            "y": 734,
+            "width": 484,
+            "height": 22,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "雾化16px",
+            "x": 236,
+            "y": 766,
+            "width": 484,
+            "height": 22,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "额外补雾化的选择器给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "x": 236,
+            "y": 798,
+            "width": 484,
+            "height": 76,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "玻璃保真度100%",
+            "x": 236,
+            "y": 884,
+            "width": 484,
+            "height": 22,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "思考块液态玻璃对话内容的三挡：关（半透明）/ 液态玻璃 / 原生（正文实色、输入框保持玻璃）关液态玻璃原生",
+            "x": 236,
+            "y": 916,
+            "width": 484,
+            "height": 36,
+            "clientWidth": 484,
+            "scrollWidth": 541
+          },
+          {
+            "text": "左侧栏液态玻璃左侧栏也跟随玻璃配方（配色 / 玻璃颜色 / 透明度 / 雾化 / 边框）",
+            "x": 236,
+            "y": 962,
+            "width": 484,
+            "height": 36,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "标题栏液态玻璃标题栏也跟随玻璃配方（配色 / 玻璃颜色 / 透明度 / 雾化 / 边框）",
+            "x": 236,
+            "y": 1008,
+            "width": 484,
+            "height": 36,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "左侧栏 · 统一圆角四角都按这个值；单独标「直角」的角覆盖它跟随原生小 6px中 12px大 20px",
+            "x": 236,
+            "y": 1107,
+            "width": 484,
+            "height": 36,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "左侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 直角右上角 圆角右下角 圆角左下角 直角",
+            "x": 236,
+            "y": 1153,
+            "width": 484,
+            "height": 36,
+            "clientWidth": 484,
+            "scrollWidth": 550
+          },
+          {
+            "text": "四角全直角四角全圆角",
+            "x": 236,
+            "y": 1199,
+            "width": 484,
+            "height": 32,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "右侧栏 · 统一圆角四角都按这个值；单独标「直角」的角覆盖它跟随原生小 6px中 12px大 20px",
+            "x": 236,
+            "y": 1241,
+            "width": 484,
+            "height": 36,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "右侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 圆角右上角 直角右下角 直角左下角 圆角",
+            "x": 236,
+            "y": 1287,
+            "width": 484,
+            "height": 36,
+            "clientWidth": 484,
+            "scrollWidth": 550
+          },
+          {
+            "text": "四角全直角四角全圆角",
+            "x": 236,
+            "y": 1333,
+            "width": 484,
+            "height": 32,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "全局配色一处调全部：界面强调色、按钮、选中态与下面那几处都会跟着变自定义",
+            "x": 236,
+            "y": 1428,
+            "width": 484,
+            "height": 66,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "UI 配色自定义",
+            "x": 236,
+            "y": 1504,
+            "width": 484,
+            "height": 32,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "光标颜色输入框光标看不清时换个颜色（与上面的总开关无关，始终可调）自动自定义",
+            "x": 236,
+            "y": 1546,
+            "width": 484,
+            "height": 66,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          },
+          {
+            "text": "字体自定义",
+            "x": 236,
+            "y": 1675,
+            "width": 484,
+            "height": 32,
+            "clientWidth": 484,
+            "scrollWidth": 484
+          }
+        ],
+        "unnamedControls": [
+          {
+            "type": "text",
+            "class": "we-picker__text"
+          }
+        ]
+      }
+    },
+    {
+      "case": "responsive",
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "panel": {
+          "x": 236,
+          "y": 78,
+          "width": 106,
+          "height": 2437
+        },
+        "clientWidth": 106,
+        "scrollWidth": 283,
+        "fontSamples": [
+          {
+            "text": "主题",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题随壁纸",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "细节",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "主题预设",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "预设方案",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          },
+          {
+            "text": "玻璃 UI",
+            "fontSize": "17.6px",
+            "color": "rgb(40, 42, 46)"
+          },
+          {
+            "text": "深色单独设置",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "玻璃颜色",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "额外补雾化的选择器",
+            "fontSize": "14.08px",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "text": "给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "fontSize": "12px",
+            "color": "rgb(70, 73, 79)"
+          }
+        ],
+        "rows": [
+          {
+            "text": "主题随壁纸试验性功能 · 关 = 不按壁纸自动改深浅主题（默认关）",
+            "x": 236,
+            "y": 267,
+            "width": 106,
+            "height": 36,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "边框35%",
+            "x": 236,
+            "y": 366,
+            "width": 106,
+            "height": 22,
+            "clientWidth": 106,
+            "scrollWidth": 245
+          },
+          {
+            "text": "预设方案一键套用整套配置（出厂七套 + 你自己存的，上限 8 个）：观感、行为与勾选的字体 / 立绘 / 头像一起生效，应用后可继续微调",
+            "x": 236,
+            "y": 451,
+            "width": 106,
+            "height": 36,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "保存当前为预设…导出预设…导入预设…",
+            "x": 236,
+            "y": 621,
+            "width": 106,
+            "height": 106,
+            "clientWidth": 106,
+            "scrollWidth": 127
+          },
+          {
+            "text": "深色单独设置",
+            "x": 236,
+            "y": 813,
+            "width": 106,
+            "height": 32,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "玻璃颜色自定义",
+            "x": 236,
+            "y": 855,
+            "width": 106,
+            "height": 109,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "玻璃透明度20%",
+            "x": 236,
+            "y": 974,
+            "width": 106,
+            "height": 22,
+            "clientWidth": 106,
+            "scrollWidth": 245
+          },
+          {
+            "text": "雾化16px",
+            "x": 236,
+            "y": 1006,
+            "width": 106,
+            "height": 22,
+            "clientWidth": 106,
+            "scrollWidth": 245
+          },
+          {
+            "text": "额外补雾化的选择器给第三方插件自己的面板补上毛玻璃（它们自身没有模糊，全局「雾化」对它们无效）",
+            "x": 236,
+            "y": 1038,
+            "width": 106,
+            "height": 76,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "玻璃保真度100%",
+            "x": 236,
+            "y": 1124,
+            "width": 106,
+            "height": 22,
+            "clientWidth": 106,
+            "scrollWidth": 245
+          },
+          {
+            "text": "思考块液态玻璃对话内容的三挡：关（半透明）/ 液态玻璃 / 原生（正文实色、输入框保持玻璃）关液态玻璃原生",
+            "x": 236,
+            "y": 1156,
+            "width": 106,
+            "height": 74,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "左侧栏液态玻璃左侧栏也跟随玻璃配方（配色 / 玻璃颜色 / 透明度 / 雾化 / 边框）",
+            "x": 236,
+            "y": 1240,
+            "width": 106,
+            "height": 36,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "标题栏液态玻璃标题栏也跟随玻璃配方（配色 / 玻璃颜色 / 透明度 / 雾化 / 边框）",
+            "x": 236,
+            "y": 1286,
+            "width": 106,
+            "height": 36,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "左侧栏 · 统一圆角四角都按这个值；单独标「直角」的角覆盖它跟随原生小 6px中 12px大 20px",
+            "x": 236,
+            "y": 1409,
+            "width": 106,
+            "height": 74,
+            "clientWidth": 106,
+            "scrollWidth": 190
+          },
+          {
+            "text": "左侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 直角右上角 圆角右下角 圆角左下角 直角",
+            "x": 236,
+            "y": 1493,
+            "width": 106,
+            "height": 74,
+            "clientWidth": 106,
+            "scrollWidth": 283
+          },
+          {
+            "text": "四角全直角四角全圆角",
+            "x": 236,
+            "y": 1577,
+            "width": 106,
+            "height": 32,
+            "clientWidth": 106,
+            "scrollWidth": 187
+          },
+          {
+            "text": "右侧栏 · 统一圆角四角都按这个值；单独标「直角」的角覆盖它跟随原生小 6px中 12px大 20px",
+            "x": 236,
+            "y": 1619,
+            "width": 106,
+            "height": 74,
+            "clientWidth": 106,
+            "scrollWidth": 190
+          },
+          {
+            "text": "右侧栏 · 四角单独点一下就切换：圆角（用统一值）/ 直角（0px）左上角 圆角右上角 直角右下角 直角左下角 圆角",
+            "x": 236,
+            "y": 1703,
+            "width": 106,
+            "height": 74,
+            "clientWidth": 106,
+            "scrollWidth": 283
+          },
+          {
+            "text": "四角全直角四角全圆角",
+            "x": 236,
+            "y": 1787,
+            "width": 106,
+            "height": 32,
+            "clientWidth": 106,
+            "scrollWidth": 187
+          },
+          {
+            "text": "全局配色一处调全部：界面强调色、按钮、选中态与下面那几处都会跟着变自定义",
+            "x": 236,
+            "y": 1930,
+            "width": 106,
+            "height": 126,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "UI 配色自定义",
+            "x": 236,
+            "y": 2066,
+            "width": 106,
+            "height": 32,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "光标颜色输入框光标看不清时换个颜色（与上面的总开关无关，始终可调）自动自定义",
+            "x": 236,
+            "y": 2108,
+            "width": 106,
+            "height": 126,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          },
+          {
+            "text": "字体自定义",
+            "x": 236,
+            "y": 2321,
+            "width": 106,
+            "height": 32,
+            "clientWidth": 106,
+            "scrollWidth": 106
+          }
+        ],
+        "unnamedControls": [
+          {
+            "type": "text",
+            "class": "we-picker__text"
+          }
+        ]
+      }
+    },
+    {
+      "case": "invalid-upload",
+      "error": [
+        "仅支持 JPG / PNG 图片与 MP4 视频"
+      ]
+    }
+  ]
+}

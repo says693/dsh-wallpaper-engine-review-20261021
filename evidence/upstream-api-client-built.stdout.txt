@@ -1,0 +1,64 @@
+
+① 裸 fetch 清点（业务代码必须为 0）
+  ✓ 客户端**全部**模块零裸 fetch（P2-9 终态） — 73 个模块全为 0
+  ✓ 负对照：磁盘枚举覆盖面成立（src/** ≥14 个模块、含出入口与主客户端、都非空） — 73 个模块（磁盘枚举 src/**）
+  ✓ 负对照：判据能数出合成文本里的裸 fetch
+  ✓ src/api-client.js 存在且是出入囗模块
+  ✓ fetch 只在出入口模块内部被"取用"（业务代码零调用）
+
+①b 二进制响应消费者（.response.blob/arrayBuffer）必须 parse: false
+  ✓ 每个二进制消费者在同一调用窗内都有 parse: false — 3 处全带（src/client-media-frame.js:202, src/live-layer-pointer.js:454, src/video-layer.js:663）
+  ✓ 覆盖面：判据扫到 ≥3 处二进制消费者 — src/client-media-frame.js:202, src/live-layer-pointer.js:454, src/video-layer.js:663
+  ✓ 负对照：缺 parse: false 的合成窗口被判出
+  ✓ 正对照：带 parse: false 的窗口不被误伤
+
+② URL 前缀 / 默认值
+  ✓ 相对路径补前缀
+  ✓ 不带斜杠也补
+  ✓ 已带前缀不重复补
+  ✓ 绝对 URL 判定认任意 scheme（自定义协议不得被重拼）
+  ✓ 绝对 URL 原样返回
+  ✓ 空值不炸
+  ✓ 默认 no-store — "no-store"
+  ✓ 默认 GET
+  ✓ 路径经前缀
+  ✓ 负对照：显式覆盖 cache 时必须尊重
+
+③ 语义（非 2xx / 网络中断 / 解析失败）
+  ✓ 2xx + JSON ⇒ ok 且解析出 data
+  ✓ 404 ⇒ ok=false 且 status 保留（由调用点决定语义）
+  ✓ 网络/中断 ⇒ 不抛，error 记下名字（调用点可区分 AbortError）
+  ✓ JSON 解析失败 ⇒ 仍是 ok（成功但无体/非 JSON），只置 error
+  ✓ HEAD 不解析体
+  ✓ DELETE 默认不解析体（很多接口 204/空体）
+  ✓ 非 2xx 默认**不**解析体（错误页不当数据）
+  ✓ parse:'always' 能读到宿主给的原因（4xx 的 {error}）
+  ✓ 本地 datREDACTED_LOCAL_PATH URL 原样通过（本模块也是本地字节转换的出口）
+  ✓ fetch: null（非函数）⇒ 回退到全局 fetch，并按同一形状返回结果（不抛） — [{"url":"/wallpaper-engine/a","init":{"method":"GET","cache":"no-store"}}]
+  ✓ 环境里也没有 fetch 时给出结构化失败而不是抛（error=no-fetch） — {"ok":false,"status":0,"data":null,"error":"no-fetch","url":"/wallpaper-engine/a"}
+  ✓ 负对照：no-fetch 形状判据对"抛了 / 形状不对 / 其实是别的原因"都有牙
+
+④ POST 序列化
+  ✓ POST 序列化 JSON 体
+  ✓ POST 带 Content-Type
+  ✓ method 默认 POST
+  ✓ 空体 ⇒ 空对象而不是 undefined
+
+⑤ 源码不变量
+  ✓ 模块内零 !important
+  ✓ 模块不读 selection / DOM（纯网络出入口）
+  ✓ 不硬编码宿主地址（只走相对前缀）
+
+⑥ 出入口已登记进构建清单、并真的进了产物
+  ✓ INLINE_MODULES 登记了 src/api-client.js
+  ✓ 产物里确有 apiFetch 实现（已内联，不是只登记）
+  ✓ 产物里只有**一份**实现（防"正文自带一份旧的"两处漂移）
+  ✓ 负对照：登记判据对未登记的模块名有牙
+
+⑦ Response 替身必须带 status
+  ✓ 所有 Response 替身都带 status（ok 只能由 status 推出） — 42 个替身对象干净
+  ✓ 负对照：扫描确实覆盖到文件（>20 个 mjs，防 walker 静默返回空表） — 101 个
+  ✓ 覆盖面：扫描真的命中 stub 形对象 ≥ 1（域空 ⇒ 上一条恒真） — 42 个 stub 形对象
+  ✓ 负对照：判据对"缺 status 的替身"有牙、对合规替身放行
+
+ALL API CLIENT CHECKS PASSED

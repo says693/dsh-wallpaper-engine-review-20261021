@@ -1,0 +1,20 @@
+{
+  "steps": [
+    {
+      "name": "profile-init",
+      "exitCode": 0,
+      "seconds": 0.154
+    },
+    {
+      "name": "install",
+      "exitCode": 0,
+      "seconds": 1.031
+    },
+    {
+      "name": "browser-replay",
+      "exitCode": 0,
+      "seconds": 21.059
+    }
+  ],
+  "hostTermination": "only our child process; intentionally stopped"
+}
